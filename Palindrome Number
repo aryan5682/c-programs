@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,i,p,res=0,rem;
+    scanf("%d",&n);//input the number
+    p=n;
+    while(p!=0){ 
+        rem=p%10;
+        res=res*10+rem;
+        p=p/10;
+    }
+        
+    if(res==n){
+        printf("Number is pallindrom");
+    }
+        else{
+            printf("Number is not pallindrom");
+        }
+        
+    
+    
+        
+    return 0;
+}
